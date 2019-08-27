@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.KeyEvent;
+import android.widget.Toast;
 
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
@@ -62,6 +63,7 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (!Settings.canDrawOverlays(this)) {
                     // SYSTEM_ALERT_WINDOW permission not granted
+                    Toast.makeText(this, "Overlay permission denied!", Toast.LENGTH_LONG).show();
                 }
             }
         }
