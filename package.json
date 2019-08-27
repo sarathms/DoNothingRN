@@ -1,0 +1,12 @@
+{
+  "name": "DoNothingRn",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "yarn react-native start"
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-native": "^0.60.5"
+  }
+}
